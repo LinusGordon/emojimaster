@@ -50,7 +50,7 @@ app.get('/', function (req, res) {
 		    sendTextMessage(sender, text);
 		    if(text.slice(-1) == "_") {
 		    	sendTextMessage(sender, "LAST");
-				text = text.substring(0, text.length()-1);		    
+				text = text.substring(0, text.length - 1);		    
 			}
 		    sendTextMessage(sender, text);
 		    if(text == "what is your name?" || text == "what is your name") {
