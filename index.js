@@ -44,7 +44,7 @@ app.get('/', function (req, res) {
 		    text.replace(/emoji/g,''); // remove "emoji" from string
 		    text.replace(/face/g,''); // remove "face" from string
 		    text = text.split(' ').join('_'); // replace spaces with underscores
-		    if(text == "what is your name?" || == "what is your name") {
+		    if(text == "what is your name?" || text == "what is your name") {
 				sendTextMessage(sender, "EmojiMaster, built by Linus");
 		    }		    
        		else if(text in emojis) {
