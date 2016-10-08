@@ -59,6 +59,8 @@ app.get('/', function (req, res) {
 		   		sendTextMessage(sender, emojis[text]);
 		    } else if(text == "help") {
 		    	sendTextMessage(sender, "Welcome to EmojiMaster, made by Linus. Please tell me the name of your favorite emoji.");
+		    } else if(text == "hey" || text == "hi" || text == "hello") {
+		    	sendTextMessage(sender, "Hello! I am EmojiMaster, made by Linus. Please tell me the name of your favorite emoji.");
 		    }
 		    else {
 		    	sendTextMessage(sender, "Sorry, I couldn't find that emoji. If you would like help, please say, 'help.'");
