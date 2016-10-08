@@ -1,0 +1,24 @@
+{
+  "name": "emojimaster",
+  "version": "1.0.0",
+  "description": "Facebook emoji chatbot",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LinusGordon/emojimaster.git"
+  },
+  "author": "Linus Gordon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LinusGordon/emojimaster/issues"
+  },
+  "homepage": "https://github.com/LinusGordon/emojimaster#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "request": "^2.75.0"
+  }
+}
