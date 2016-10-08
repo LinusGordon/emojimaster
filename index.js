@@ -47,7 +47,8 @@ app.get('/', function (req, res) {
 		    text = text = text.split(' ').join('_'); // replace spaces with underscores
 		    text = text.replace(/emoji/g,''); // remove "emoji" from string
 		    text = text.replace(/face/g,''); // remove "face" from string
-		    if(text.slice(-1) == "_") {
+
+		    while(/[^a-zA-Z0-9]/.test(text.slice(-1))  {
 				text = text.substring(0, text.length - 1);		    
 			}
 
@@ -60,7 +61,7 @@ app.get('/', function (req, res) {
 		    } else if(text == "help") {
 		    	sendTextMessage(sender, "Welcome to EmojiMaster, made by Linus. Please tell me the name of your favorite emoji.");
 		    } else if(text == "hey" || text == "hi" || text == "hello") {
-		    	sendTextMessage(sender, "Hello! I am EmojiMaster, made by Linus. Please tell me the name of your favorite emoji.");
+		    	sendTextMessage(sender, "Hello! I am EmojiMaster, made by Linus. ")
 		    }
 		    else {
 		    	sendTextMessage(sender, "Sorry, I couldn't find that emoji. If you would like help, please say, 'help.'");
