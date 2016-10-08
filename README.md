@@ -1,6 +1,9 @@
 # EmojiMaster
 A facebook chatbot that finds and returns an emoji a user asks for
 ## Functionality
+##### Example:
+![alt tag](https://github.com/LinusGordon/emojimaster/blob/master/exampleVid.gif)     
+
 ##### Name:     
 ![alt tag](https://github.com/LinusGordon/emojimaster/blob/master/demoName.png)  
      
