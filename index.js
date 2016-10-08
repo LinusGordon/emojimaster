@@ -39,20 +39,18 @@ app.get('/', function (req, res) {
 		let event = req.body.entry[0].messaging[i];
 		let sender = event.sender.id;
 		if (event.message && event.message.text) {
+
+			// String Formatting
 		    let text = event.message.text.toLowerCase();
-		    sendTextMessage(sender, text);
 		    text.replace(/\W/g, '') // remove all non-alphanumeric characters
-		    sendTextMessage(sender, text);
 		    text = text = text.split(' ').join('_'); // replace spaces with underscores
 		    text = text.replace(/emoji/g,''); // remove "emoji" from string
-		    sendTextMessage(sender, text);
 		    text = text.replace(/face/g,''); // remove "face" from string
-		    sendTextMessage(sender, text);
 		    if(text.slice(-1) == "_") {
-		    	sendTextMessage(sender, "LAST");
 				text = text.substring(0, text.length - 1);		    
 			}
-		    sendTextMessage(sender, text);
+
+			// Chat bot responses
 		    if(text == "what is your name?" || text == "what is your name") {
 				sendTextMessage(sender, "EmojiMaster, built by Linus");
 		    }		    
