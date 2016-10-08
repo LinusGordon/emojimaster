@@ -14,7 +14,7 @@ ___
 ## To Do:     
 - [x] More emojis    
 - [x] Account for "ing" endings 
-- [ ] Find/fix more special "ing" cases (smiling->smil not smile)
+- [x] Find/fix more special "ing" cases (smiling->smil not smile)
 - [ ] Even more emojis  
 
 ---- 
