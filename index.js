@@ -48,7 +48,7 @@ app.get('/', function (req, res) {
 		    sendTextMessage(sender, text);
 		    text = text.replace(/face/g,''); // remove "face" from string
 		    sendTextMessage(sender, text);
-		    if(text.slice(-1); == "_") {
+		    if(text.slice(-1) == "_") {
 		    	sendTextMessage(sender, "LAST");
 				text = text.substring(0, text.length()-1);		    
 			}
