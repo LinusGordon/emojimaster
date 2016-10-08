@@ -1,6 +1,6 @@
 'use strict'
    
-    var emojis = {"smile": "\ud83d\ude04", "grin": "\ud83d\ude00", "teeth", "\ud83d\ude01"};
+    var emojis = {"smile": "\ud83d\ude04", "grin": "\ud83d\ude00", "teeth": "\ud83d\ude01"};
 
 const express = require('express');
 const bodyParser = require('body-parser');
