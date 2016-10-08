@@ -45,7 +45,9 @@ app.get('/', function (req, res) {
 			sendTextMessage(sender, "Chatbot, built by Linus");
 		    }
 		    
-		    
+		    if(text.toLowerCase() in emojis) {
+			sendTextMessage(sender, emojis[text.toLowerCase());
+		    }
 		    sendTextMessage(sender, "Echo: " + text.substring(0, 200));
 		}
 	    }
