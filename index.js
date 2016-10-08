@@ -48,7 +48,7 @@ app.get('/', function (req, res) {
 		    text = text.replace(/emoji/g,''); // remove "emoji" from string
 		    text = text.replace(/face/g,''); // remove "face" from string
 
-		    while(/[^a-zA-Z0-9]/.test(text.slice(-1))  {
+		    while(/[^a-zA-Z0-9]/.test(text.slice(-1)))  {
 				text = text.substring(0, text.length - 1);		    
 			}
 
