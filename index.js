@@ -49,8 +49,8 @@ app.get('/', function (req, res) {
 		    text = text.replace(/face/g,''); // remove "face" from string
 		    sendTextMessage(sender, text);
 		    if(text[text.length - 1] == "_") {
-		    	text = text.replace(/_/g,'');
-		    }
+				text = text.substring(0, text.length()-1);		    
+			}
 		    sendTextMessage(sender, text);
 		    if(text == "what is your name?" || text == "what is your name") {
 				sendTextMessage(sender, "EmojiMaster, built by Linus");
