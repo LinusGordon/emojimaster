@@ -40,7 +40,7 @@ app.get('/', function (req, res) {
 		let sender = event.sender.id;
 		if (event.message && event.message.text) {
 		    let text = event.message.text.toLowerCase();
-		    input.replace(/\W/g, '') // remove all non-alphanumeric characters
+		    text.replace(/\W/g, '') // remove all non-alphanumeric characters
 		    text.replace(/emoji/g,''); // remove "emoji" from string
 		    text.replace(/face/g,''); // remove "face" from string
 		    text = text.split(' ').join('_'); // replace spaces with underscores
