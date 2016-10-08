@@ -13,9 +13,10 @@ ___
 
 ## To Do:     
 - [x] More emojis    
-- [x] Account for "ing" endings
+- [x] Account for "ing" endings 
 - [ ] Find/fix more special "ing" cases (smiling->smil not smile)
-- [ ] Even more emojis     
+- [ ] Even more emojis  
+
 ---- 
 Please contact me for Facebook Messenger access.
  
