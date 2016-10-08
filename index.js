@@ -50,7 +50,6 @@ app.get('/', function (req, res) {
 				text = text.substring(0, text.length - 1);		    
 			}
 
-			sendTextMessage(sender, text);
 			// Chat bot responses
 		    if(text == "what_is_your_name" || text == "whats_your_name") {
 				sendTextMessage(sender, "EmojiMaster, built by Linus");
