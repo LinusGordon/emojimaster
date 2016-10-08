@@ -48,7 +48,7 @@ app.get('/', function (req, res) {
 		    text = text.replace(/face/g,''); // remove "face" from string
 		    sendTextMessage(sender, text);
 		    text = text = text.split(' ').join('_'); // replace spaces with underscores
-		    if(text[text.size() - 1] == "_") {
+		    if(text[text.length - 1] == "_") {
 		    	text = text.replace(/_/g,'');
 		    }
 		    sendTextMessage(sender, text);
