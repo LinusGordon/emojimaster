@@ -40,15 +40,15 @@ app.get('/', function (req, res) {
 		let sender = event.sender.id;
 		if (event.message && event.message.text) {
 		    let text = event.message.text;
-		    sendTextMessage(sender, "1");
+		    console.log("1");
 		    if(text.toLowerCase() == "what is your name?" || text.toLowerCase() == "what is your name") {
 			sendTextMessage(sender, "Chatbot, built by Linus");
 		    }
-		    
+		    console.log("1");
 		    if(emojis.indexOf(text.toLowerCase()) != -1) {
 			sendTextMessage(sender, emojis[text.toLowerCase()]);
 		    }
-		    
+		    console.log("3");
 		    sendTextMessage(sender, "Echo: " + text.substring(0, 200));
 		}
 	    }
