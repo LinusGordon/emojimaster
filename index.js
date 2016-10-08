@@ -1,6 +1,6 @@
 'use strict'
    
-var emojis = {"smile": "ud83d\ude04", "frown": "☹"}
+var emojis = {"smile": "\ud83d\ude04", "frown": "☹"}
 
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -44,7 +44,7 @@ app.get('/', function (req, res) {
 			sendTextMessage(sender, "Chatbot, built by Linus");
 		    }		    
        		    if(text.toLowerCase() in emojis) {
-		   	sendTextMessage(sender, '\\'+ emojis[text.toLowerCase()]);
+		   	sendTextMessage(sender, emojis[text.toLowerCase()]);
 		    }
 		    sendTextMessage(sender, "Echo: " + text.substring(0, 200));
 		}
