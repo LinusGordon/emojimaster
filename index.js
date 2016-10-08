@@ -52,7 +52,7 @@ app.get('/', function (req, res) {
 
 			sendTextMessage(sender, text);
 			// Chat bot responses
-		    if(text == "what is your name?" || text == "what is your name") {
+		    if(text == "what_is_your_name" || text == "whats_your_name") {
 				sendTextMessage(sender, "EmojiMaster, built by Linus");
 		    }		    
        		else if(text in emojis) {
