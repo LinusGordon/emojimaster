@@ -43,9 +43,9 @@ app.get('/', function (req, res) {
 		    if(text.toLowerCase() == "what is your name?" || text.toLowerCase() == "what is your name") {
 			sendTextMessage(sender, "Chatbot, built by Linus");
 		    }		    
-		    //		    if(text.toLowerCase() in emojis) {
-		    //	sendTextMessage(sender, emojis[text.toLowerCase()]);
-		    // }
+		    if(text.toLowerCase() in emojis) {
+			sendTextMessage(sender, emojis[text.toLowerCase()]);
+		    }
 		    sendTextMessage(sender, "Echo: " + text.substring(0, 200));
 		}
 	    }
