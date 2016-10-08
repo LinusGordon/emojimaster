@@ -43,11 +43,11 @@ app.get('/', function (req, res) {
 		    sendTextMessage(sender, text);
 		    text.replace(/\W/g, '') // remove all non-alphanumeric characters
 		    sendTextMessage(sender, text);
-		    text.replace(/emoji/g,''); // remove "emoji" from string
+		    text = text.replace(/emoji/g,''); // remove "emoji" from string
 		    sendTextMessage(sender, text);
-		    text.replace(/face/g,''); // remove "face" from string
+		    text = text.replace(/face/g,''); // remove "face" from string
 		    sendTextMessage(sender, text);
-		    text = text.split(' ').join('_'); // replace spaces with underscores
+		    text = text = text.split(' ').join('_'); // replace spaces with underscores
 		    sendTextMessage(sender, text);
 		    if(text == "what is your name?" || text == "what is your name") {
 				sendTextMessage(sender, "EmojiMaster, built by Linus");
