@@ -48,7 +48,8 @@ app.get('/', function (req, res) {
 		    sendTextMessage(sender, text);
 		    text = text.replace(/face/g,''); // remove "face" from string
 		    sendTextMessage(sender, text);
-		    if(text[text.length - 1] == "_") {
+		    if(str.slice(-1); == "_") {
+		    	sendTextMessage(sender, "LAST");
 				text = text.substring(0, text.length()-1);		    
 			}
 		    sendTextMessage(sender, text);
@@ -56,7 +57,7 @@ app.get('/', function (req, res) {
 				sendTextMessage(sender, "EmojiMaster, built by Linus");
 		    }		    
        		else if(text in emojis) {
-		   		sendTextMessage(sender, emojis[text.toLowerCase()]);
+		   		sendTextMessage(sender, emojis[text]);
 		    } else if(text == "help") {
 		    	sendTextMessage(sender, "Welcome to EmojiMaster, made by Linus. Please tell me the name of your favorite emoji.");
 		    }
